@@ -1,0 +1,128 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  color: #172c45;
+  text-decoration: none
+}
+
+a:hover {
+  color: #cd0200;
+  text-decoration: underline
+}
+
+em {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+
+@blue: #1C97CA;
+@green: #64AE3C;
+/*滚动条样式*/
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: @blue;
+  border-radius: 2px;
+}
+
+.scroll-container {
+  overflow-y: scroll;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: @blue;
+}
+
+
+/*用户选中区域样式*/
+
+::selection {
+  background: @blue;
+  color: #fff;
+}
+
+section:nth-child(even) {
+  background-color: #f1f1f1;
+}
+section {
+  padding: 50px 0 60px 0;
+}
+.hide { //  宽屏时显示
+  display: none;
+}
+.fade-enter-active, .fade-leave-avtive {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+.transitionRouter-enter-active,
+.transitionRouter-leave-active {
+  transition: all 0.4s;
+}
+
+.transitionRouter-enter,
+.transitionRouter-leave{
+  transform: translate3d(100%, 0, 0);
+}
+#banner {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  background: url(../assets/images/nav_bg.jpg) no-repeat center top;
+  //-moz-background-size: 100% auto;
+  //background-size: 100% auto;
+}
+@media screen and (max-width:1070px) {
+  .hamburger {
+    display: block;
+  }
+  .hide {
+    display: block;
+  }
+  .show {
+    display: none;
+  }
+}

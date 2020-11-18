@@ -1,0 +1,12 @@
+div.indexmaindiv{height:160px;margin:0px auto;width:1010px;}
+div.indexmaindiv div.playerstyles{width:168px;height:44px;}
+div.indexmaindiv1{margin-top:25px;}
+div.indexmaindiv1 div.stylesgoleft{float:left;width:21px;height:28px;background:url('images/arrowhead.png') no-repeat left top;margin:39px 5px 0px 0px;cursor:pointer;}
+div.indexmaindiv1 div.stylesgoleft:hover{float:left;width:21px;height:28px;background:url('images/arrowhead.png') no-repeat left -28px;margin:39px 5px 0px 0px;cursor:pointer;}
+div.indexmaindiv1 div.playerdetail{width:172px;}
+div.indexmaindiv1 div.stylesgoright{float:left;width:21px;height:28px;background:url('images/arrowhead.png') no-repeat left -56px;margin:39px 0px 0px 15px;cursor:pointer;}
+div.indexmaindiv1 div.stylesgoright:hover{float:left;width:21px;height:28px;background:url('images/arrowhead.png') no-repeat left -84px;margin:39px 0px 0px 15px;cursor:pointer;}
+/*滚动*/
+div.maindiv1{float:left;width:926px;height:100px;overflow:hidden;position:relative;}
+div.maindiv1 ul{position:absolute;left:0;top:0;}
+div.maindiv1 ul li{float:left;width:172px;margin-left:13px;}
